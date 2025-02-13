@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: skyblue;
+        }
+        #ball{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            box-shadow: 3px 3px 10px yellow;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+            top: 40vh;
+            animation-name: slide;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-direction: alternate;
+        
+
+        }
+        @keyframes slide {
+            0%{
+                transform: translateX(40vw);
+            } 
+            100%{
+                transform: translateX(-40vw);
+            }    
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+</body>
+</html>

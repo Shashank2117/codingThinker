@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 1100px;
+            height: 450px;
+            border: 2px solid green;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-evenly;
+            
+        }
+        .one{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+        #parent:hover{
+            width: 100%;
+        }
+        #first{
+            background-color:rgb(251, 187, 187);
+            transition: linear;
+            transition-duration: 3s;
+        }
+        #second{
+            background-color: rgb(192, 151, 248);
+            transition: ease-in;
+            transition-duration: 3s;
+        }
+        #third{
+            background-color: rgb(118, 245, 133);
+            transition: ease-out;
+            transition-duration: 3s;
+        }
+        #fourth{
+            background-color:rgb(246, 165, 73) ;
+            transition: ease-in-out;
+            transition-duration: 3s;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="box">
+        <div id="parent">
+            <div class="one" id="first"></div>
+            <div class="one" id="second"></div>
+            <div class="one" id="third"></div>
+            <div class="one" id="fourth"></div>
+        </div>
+    </div>
+</body>
+</html>

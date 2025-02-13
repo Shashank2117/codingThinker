@@ -1,0 +1,23 @@
+li{
+    font-size: 2em;
+}
+div{
+  height: 300px;
+  width: 300px; 
+  background-color: darkseagreen;
+  display: inline-block; 
+}
+span{
+    height: 300px;
+    width: 300px;
+    background-color: darkkhaki;
+    display: inline-block;
+}
+
+
+table, tr, td, th{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+  text-align: center;
+}

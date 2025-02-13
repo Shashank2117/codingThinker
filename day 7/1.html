@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            height: 40px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #elements {
+            width: 25%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li:hover {
+            color: gold;
+        }
+
+        /* #main {
+            position: absolute;
+            left: 470px;
+            text-align: center;
+        } */
+
+        #cards {
+            height: 450px;
+            width: 100%;
+            /* position: absolute; */
+            top: 170px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .one {
+            height: 350px;
+            width: 220px;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin: 15px;
+            box-shadow: 3px 3px 5px black;
+        }
+
+        .one:hover {
+            /* height: 360px;
+            width: 230px; */
+            transform: scale(1.1);
+            transition-duration: 2s;
+            border-radius: 12px;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        .child {
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        h3:hover {
+            transform: scale(3);
+            transition: 3s;
+        }
+
+        #p1:hover {
+            transform: scale(2);
+            transition-duration: 3s;
+
+        }
+
+        #check {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="heading">
+            <H3>MyWebsite</H3>
+        </div>
+        <div id="elements">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div id="main">
+        <h3>Welcome to MyWebsite</h3>
+        <p id="p1">Enjoy amazing content with hover effect</p>
+    </div> -->
+
+    <div id="cards">
+        <!-- nature -->
+        <div class="one" id="centre">
+            <div class="child"><img src="img1.webp" height="150px" width="100%"></div>
+            <h4>Nature</h4>
+            <p>explore the beauty of nature </p>
+        </div>
+
+        <!-- tech -->
+        <div class="one" id="left">
+            <div class="child"><img src="img2.avif" height="150px" width="100%"></div>
+            <h4>Technology</h4>
+            <p>latest trends and insights in the tech industry</p>
+        </div>
+
+        <!-- bussisness -->
+        <div class="one" id="right">
+            <div class="child"><img src="img3.avif" height="150px" width="100%"></div>
+            <h4>Bussisness</h4>
+            <p>Strategies and growth tips for entrepreneurs</p>
+        </div>
+    </div>
+
+
+    <div id="check">check</div>
+
+</body>
+
+</html>

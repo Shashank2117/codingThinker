@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        #parent{
+            height: 400px;
+            width: 800px;
+            border: 2px dashed black;
+            margin: 30px auto;
+            display: flex;
+            flex-direction:row;
+            justify-content:space-between;
+            
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1.5px solid black;
+            border-radius: 50%;
+            text-align: center;
+            align-content: center;
+        }
+        #one{
+            background-color: red;
+        }
+        #two{
+            background-color: yellow;
+        }
+        #three{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one" class="box">RED</div>
+        <div id="two" class="box">YELLOW</div>
+        <div id="three" class="box">GREEN</div>
+    </div>
+</body>
+</html>

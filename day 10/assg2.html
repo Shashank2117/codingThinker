@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2616bc9d69.js" crossorigin="anonymous"></script>
+
+    <style>
+        h2{
+            color: whitesmoke;
+        }
+        #div1{
+            height: 70px;
+            width: 50%;
+            text-align: center;
+            background-color: rgba(29, 24, 47, 0.666);
+            border-radius: 6px;
+            margin: 20px auto;
+        }
+        #div1:hover{
+            height: 100px;
+            width: 80%;
+            transition-duration:1.5s ;
+            
+        }
+        #div2{
+            height: 400px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 190px 190px;
+            grid-template-columns: 320px 320px 320px;
+            gap: 10px;
+        }
+        img{
+            margin-left: 10px;
+            height: 100%;
+            width: 100%;
+        }
+        .two{
+            height: 190px;
+            width: 320px;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: -194px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        #first:hover{
+            background-color: rgba(90, 151, 157, 0.555);
+        }
+        #second:hover{
+            background-color: rgba(190, 78, 94, 0.555);
+        }
+        #third:hover{
+            background: rgba(74, 156, 74, 0.555)
+        }
+        #fourth:hover{
+            background-color: rgba(255, 227, 17, 0.555);
+        }
+        #fifth:hover{
+            background-color: rgba(255, 68, 0, 0.555);
+        }
+        i{   
+            opacity: 0;
+        }
+        .two:hover i{
+            scale: 1.5;
+            opacity: 1;
+        }
+        
+        
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="div1">
+        <h2>Photographer's Blog</h2>
+        <p>Iam a superb photographer please see my collection</p>
+    </div>
+    <div id="div2">
+        <div class="one" id="one"><img src="img1.jpg" alt=""><div class="two" id="first"><i class="fa-solid fa-camera-retro"></i></div></div>
+        <div class="one" id="two"><img src="img2.jpg" alt=""><div class="two" id="second"><i class="fa-solid fa-camera-retro"></i></div></div>
+        <div class="one" id="three"><img src="img3.jpg" alt=""><div class="two" id="third"><i class="fa-solid fa-camera-retro"></i></div></div>
+        <div class="one" id="four"><img src="img4.jpg" alt=""><div class="two" id="fourth"><i class="fa-solid fa-camera-retro"></i></div></div>
+        <div class="one" id="five"><img src="img5.jpg" alt=""><div class="two" id="fifth"><i class="fa-solid fa-camera-retro"></i></div></div>
+        
+        
+        
+        
+        
+    </div>
+</body>
+</html>
+
+<!-- .img-inner{
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            opacity: 0;        
+        }
+        .two:hover .img-inner{
+            opacity: 1;
+            transition-duration: 1.5s;
+        } -->

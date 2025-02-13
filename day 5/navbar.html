@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        #navbar{
+            width: 100%;
+            height: 70px;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 3px solid gold;
+        }
+        .bt1{
+            height: 30px;
+        }
+        #last{
+            height: 60%;
+            width: 80px;
+            font-size: medium;
+            background-color: rgb(253, 177, 35);
+        }
+        button{
+            color: white;
+            background-color: rgb(39, 39, 39);
+            height: 25px;
+        }
+        #ctfont{
+            font-size: large;
+            color: orange;
+        }
+        #mainimg{
+            width:1153px;
+            height: 450px;
+        }
+        #maindiv{
+            position: relative;
+        }
+        #innertext{
+            font-size: larger;
+            color: white;
+            position: absolute;
+            top: 75px;
+            left: 70px;
+        }
+        #vc{
+            height: 40px;
+            width: 100px;
+            background-color: crimson;
+            position: absolute;
+            top: 300px;
+            left: 75px;
+            border: 2px solid;
+            border-radius: 8px;
+        }
+        #python{
+            width: 300px;
+            height: 400px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 12px black;
+            text-align: center;
+        }
+        #pyimg{
+            width: 100%;
+            height: 40%;
+        }
+        h3{
+            color: blue;
+        }
+        #vc2{
+            font-size: medium;
+            color: white;
+            background-color: blue;
+        }
+        #cources{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #cources2{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer{
+            color: white;
+            background-color: rgb(39, 41, 46);
+            height: 400px;
+            width: 100%;
+            position: relative;
+        }
+        #logo{
+            height: 160px;
+            position: absolute;
+            top: 210px;
+            left: 100px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+        #lastbutton{
+            color: black;
+            background-color: skyblue;
+        }
+        form{
+            height: 110px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-image: url(img3.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h3 id="ctfont">Coding Thinker</h3>
+        <div id="content1">
+            <button class="bt1">Learn</button>
+            <button class="bt1">Practice</button>
+            <button class="bt1">Get hired</button>
+            <button class="bt1">IDE</button>
+        </div>
+        <button id="last">Login</button>
+    </div>
+    <div id="maindiv">
+        <img id="mainimg" src="img2.avif" alt="coding boy image">
+        <div id="innertext">
+            <p>The Language which has Frontend, Backend and Databases...</p>
+            <h1>Full Stack Development</h1>
+            <pre><b>Full stack development includes HTML, CSS, JS, React js
+and server side programming languages like python and java.</b></pre>
+        </div>
+        <button id="vc">View Cources</button>
+    </div>
+    <!-- yaha pe cources ki heading h -->
+    <h1>Cources based on subjects</h1>
+        <h2><i>Learn and grow as a developer and learn till you are perfect</i></h2>
+        
+    <div id="cources">
+        <!-- yaha pe python cource ka div h -->
+        <div id="python">
+            <img id="pyimg" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 014642.png" alt="">
+            <h3>Data Science with Python</h3>
+            <p>Data Science with Python involves using various libraries and tools to analyze and visualize large amounts of data, and develop predictive models and insights to inform decision-making.</p>
+            <button id="vc2">View Cource</button>
+        </div>
+        <!-- yaha pe Full Stack Development ka div h -->
+        <div id="python">
+            <img id="pyimg" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 014656.png" alt="">
+            <h3>Full Stack Development</h3>
+            <p>Full Stack Development entails creating online applications from their front ends to their back ends using a variety of tools, including HTML, CSS, JavaScript, and server-side programming languages like Python or Java.</p>
+            <button id="vc2">View Cource</button>
+        </div>
+        <!-- yaha pe java programming cource ka div h -->
+        <div id="python">
+            <img id="pyimg" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 014642.png" alt="">
+            <h3>Java Programming</h3>
+            <p>The object-oriented programming language Java is used to develop software for a range of platforms, including desktop, online, and mobile. It is renowned for its security and cross-platform compatibility.</p>
+            <button id="vc2">View Cource</button>
+        </div>
+    </div>
+    <br><br>
+    <div id="cources2">
+        <!-- yaha pe c, c++ programming cource k liye h -->
+        <div id="python">
+            <img id="pyimg" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 014656.png" alt="">
+            <h3>C, C++ Programming</h3>
+            <p>Popular Programming languages like C and C++ are utilised to develop high-performance software applications. They are frequently employed in the creation of system software, game engines, and operating systems.</p>
+            <button id="vc2">View Cource</button>
+        </div>
+        <!-- yaha pe DSA cource k liye h -->
+        <div id="python">
+            <img id="pyimg" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 115127.png" alt="">
+            <h3>Data Structures</h3>
+            <p>Data Structures and Algorithms in Java Programming entail utilising Java to create and put into use effective Data Structures and Algorithms for handling and manipulating huge data sets while maximising programme performance.</p>
+            <button id="vc2">View Cource</button>
+        </div>
+
+
+    </div>
+
+    <hr><hr>
+
+    <form action=>
+        <h1>Talk to our industry experts</h1>
+        <label for="stdname">Your Name :</label>
+        <input type="text" placeholder="your name" name="student" id="stdname">
+        <label for="phone">Mobile Number :</label>
+        <input type="number" placeholder="mobile number" name="phonenum" id="phone">
+        <button id="lastbutton">Submit</button>
+    </form>
+
+    <hr>
+    <footer>
+        <img id="logo" src="C:\Users\HP\OneDrive\Documents\coading thinker\day 5\Screenshot 2025-02-06 022334.png" alt="">
+        <h1>Company</h1>
+            <ul>
+                <li>Main Office- B-55, Kasturba Nagar, parallel to Chetak Bridge,Bhopal
+                    Branch Office - Above Chai Sutta Bar, Sector C, Indrapuri, Bhopal.</li>
+                    <li>207, Second Floor, Indraprastha Tower, M G Road, Indore</li>
+                    <li>IN front-of Hotel Saya, Padav Circle, Next to Kala Vithika, Gwalior,</li>
+                    <li>106, 1ST FLOOR, R.K. TOWER WRIGHT TOWN, JABALPUR</li>
+                    <li>+91 9755883367</li>
+                    <li>info@codingthinker.com</li>
+            </ul>
+    </footer>
+    <hr><hr><hr>
+</body>
+</html>

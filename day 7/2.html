@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+        section{
+            height: 350px;
+            width: 350px;
+            /* border: 2px solid green; */
+            position: relative;
+            margin: 20px auto;
+            transition: 3s;
+            transform-style: preserve-3d;
+        }
+        section:hover{
+            transform: rotateY(180deg);
+        }
+        #one{
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+            position: absolute;
+            z-index: 1;
+            transform: rotateY(180deg);
+        }
+        #two{
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+            position: absolute;
+            z-index: 2;
+            backface-visibility: hidden;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one"><img src="img1.webp" width="100%" height="100%"></div>
+        <div id="two">Khet m shauch krna mana h</div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #bgimg{
+        height: 550px;
+        width: 100%;
+        position: relative;
+      } 
+      #big{
+        width: 100%;
+        height: 100%;
+      } 
+      #logo{
+        height: 70px;
+        width: 160px;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+      }
+      #logont{
+        width: 100%;
+        height: 100%;
+      }
+      #trans{
+        height: 550px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.737);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      #sec1{
+        height: 90%;
+        width: 120px;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 0.666);
+        border-radius: 6px;
+      }
+      #bt1{
+        color: white;
+        background-color: red;
+        height: 90%;
+      }
+      #select1{
+        color: white;
+      }
+      #head{
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 100px;
+      }
+      #center{
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        color: white;
+        text-align: center;
+      }
+      #enter1{
+        color: whitesmoke;
+        background-color: transparent;
+        border: 1.5px solid white;
+        width: 300px;
+        height: 50px;
+        border-radius: 6px;
+        font-size: larger;
+      }
+      #get{
+        width: 150px;
+        height: 56px;
+        color: rgba(255, 255, 255, 0.825);
+        background-color: rgb(231, 5, 5);
+        border: 1px solid black;
+        border-radius: 6px;
+        font-size: larger;
+      }
+      #line{
+        width: 100%;
+        height: 5px;
+        background-color: red;
+      }
+      #content{
+        height: 380px;
+        width: 100%;
+        background: linear-gradient(rgb(8, 8, 73), rgb(0, 0, 0));
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+      #trend{
+        color: white;
+        position: absolute;
+        left: 35px;
+        top: 0px;
+      }
+      .one{
+        height: 210px;
+        width: 170px;
+        color: white;
+        /* border: 1px solid white; */
+        border-radius: 6px;
+      }
+      .one:hover{
+        height: 260px;
+        width: 220px;
+        box-shadow: 3px 3px 15px whitesmoke;
+        transition-duration: 700ms;
+      }
+      .two{
+        border-radius: 6px;
+      }
+      .num1{
+        position: absolute;
+        top: 290px;
+      }
+      #content2{
+        height: 550px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+      }
+      #reason-head{
+        color: whitesmoke;
+        position: absolute;
+        left: 60px;
+        top: 0px;
+      }
+      .fullreason{
+        height: 210px;
+        width: 450px;
+        border: 1px solid white;
+        border-radius: 20px;
+        color: whitesmoke;
+        background: linear-gradient(to bottom right, rgba(3, 2, 72, 0.83), rgba(71, 22, 83));
+        text-align: center;
+        margin: 5px;
+      }
+      #re1:hover{
+        height: 220px;
+        width: 490px;
+        transition-duration: 600ms;
+      }
+      #re2:hover{
+        height: 220px;
+        width: 490px; 
+        transition-duration: 600ms; 
+      }
+      #re3:hover{
+        height: 220px;
+        width: 490px;
+        transition-duration: 600ms;
+      }
+      #re4:hover{
+        height: 220px;
+        width: 490px;
+        transition-duration: 600ms;
+      }
+      .smallimg{
+        opacity: 0.7;
+        position: absolute;
+        
+      }
+      #section{
+        height: 450px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #faq{
+        width: 90%;
+        color: whitesmoke;
+        background-color: black;
+      }
+      #faqhead{
+        font-size: 25px;
+      }
+      .faq-question{
+        width: 90%;
+        background-color: grey;
+        color: whitesmoke;
+        padding: 15px;
+        margin: 5px;
+        font-size: larger;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer{
+        height: 650px;
+        width: 100%;
+        background-color:black;
+        display: flex;
+        justify-content: center;
+      }
+      #lastenter{
+        position: absolute;
+        margin-top: 60px;
+      }
+      #enter2{
+        color: whitesmoke;
+        border: 1px solid rgba(245, 245, 245, 0.778);
+        width: 380px;
+        height: 50px;
+        border-radius: 6px;
+        font-size: larger;
+        background-color: rgba(20, 20, 20, 0.667);
+      }
+      #get2{
+        width: 180px;
+        height: 56px;
+        color: rgba(255, 255, 255, 0.825);
+        background-color: rgb(231, 5, 5);
+        border: 1px solid black;
+        border-radius: 6px;
+        font-size: larger;  
+      }
+      #lastmail{
+        color: whitesmoke;
+      }
+      #lastsection{
+        color: rgba(245, 245, 245, 0.666);
+        display: flex;
+        position: absolute;
+        margin-top: 200px;
+        width: 100%;
+        justify-content: space-evenly;
+        font-size: larger;
+      }
+      ul{
+        list-style:none;
+        text-decoration: underline;
+      }
+      ul li{
+        margin-bottom: 25px;
+      }
+      #language{
+        height: 40px;
+        width: 150px;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: -800px;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 0.666);
+      }
+      #lasthead{
+        position: absolute;
+        margin-top: 365px;
+        margin-left: -800px;
+      }
+
+    </style>
+
+
+
+</head>
+<body>
+<header>
+    <div id="bgimg"><img id="big" src="netflixbg.jpg">
+        <div id="trans"></div>
+        <div id="center">
+          <h1>Unlimited Movies and TV shows and more</h1>
+          <p>Starts at 149. cancel at any time</p>
+          <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+          <input type="text" name="enter" id="enter1" placeholder="Email address">
+          <button id="get">Get Started ></button>
+        </div>
+    </div>
+    
+    <div id="logo"><img id="logont" src="Logonetflix.png"></div>
+    <div id="head">
+      <select id="sec1">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+      </select>
+      <button id="bt1">Sign In</button>
+    </div>
+</header>
+<main>
+    <div id="line"></div>
+
+    <div id="content">
+        <H1 id="trend">Trending Now</H1>
+        <div class="one"><img class="two" src="img1.jpg" width="100%" height="100%"><h1 class="num1">1</h1></div>
+        <div class="one"><img class="two" src="img2.jpg" width="100%" height="100%"><h1 class="num1">2</h1></div>
+        <div class="one"><img class="two" src="img3.jpg" width="100%" height="100%"><h1 class="num1">3</h1></div>
+        <div class="one"><img class="two" src="img4.jpg" width="100%" height="100%"><h1 class="num1">4</h1></div>
+        <div class="one"><img class="two" src="img5.jpg" width="100%" height="100%"><h1 class="num1">5</h1></div>
+    </div>
+    <div id="content2">
+        <h1 id="reason-head">More reasons to join</h1>
+        <div class="fullreason" id="re1"><h2>Enjoy on your TV</h2><p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p><img class="smallimg" src="comp.png" width="70px" height="70px"></div>
+        <div class="fullreason" id="re2"><h2>Download your shows to watch offline</h2><p>Save your favourites easily and always have something to watch.</p><img class="smallimg" src="down.png" width="70px" height="70px"></div>
+        <div class="fullreason" id="re3"><h2>Watch everywhere</h2><p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p><img class="smallimg" src="scope.png" width="70px" height="70px"></div>
+        <div class="fullreason" id="re4"><h2>Create profile for kids</h2><p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p><img class="smallimg" src="smile.png" width="70px" height="70px"></div>
+    </div>
+    <div id="section">
+        <div id="faq">
+            <h1 id="faqhead">Frequently asked questions</h1>
+            
+            <div class="faqitem">
+                <button class="faq-question">What is netflix ? <span>+</span></button>
+            </div>
+            <div class="faqitem">
+                <button class="faq-question">How much does netflix cost ? <span>+</span></button>
+            </div>
+            <div class="faqitem">
+                <button class="faq-question">How do i cancel ? <span>+</span></button>
+            </div>
+            <div class="faqitem">
+                <button class="faq-question">What can i watch ? <span>+</span></button>
+            </div>
+            <div class="faqitem">
+                <button class="faq-question">Is netflix good for kids ? <span>+</span></button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+        <h2 id="lastmail">Ready to watch? Enter your email to create or restart your membership.</h2>
+        <div id="lastenter">
+          <input type="text" name="enter2" id="enter2" placeholder="Email address">
+          <button id="get2">Get Started ></button>
+        </div>
+        <!-- contact info vala section -->
+      <div id="lastsection">
+        <div>
+          <ul>
+            <li>FAQ</li>
+            <li>Media center</li>
+            <li>Ways to watch</li>
+            <li>Speed test</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Help center</li>
+            <li>Investor relation</li>
+            <li>Termas of use</li>
+            <li>Legal service</li>
+          </ul>
+        </div>
+        <div>  
+          <ul>
+            <li>Account</li>
+            <li>Jobs</li>
+            <li>Privacy</li>
+            <li>Contact us</li>
+          </ul>    
+        </div>
+        <label for="language"></label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+        </select>
+        <h3 id="lasthead">Netflix India</h3>
+      </div>        
+</footer>
+<hr>
+   
+</body>
+</html>

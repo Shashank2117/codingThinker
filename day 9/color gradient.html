@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .item{
+            height: 150px;
+            width: 250px;
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px black;   
+        }
+        h2{
+            text-align: center;
+        }
+        #one{
+            background: linear-gradient(to right, red, blue);
+        }
+        #two{
+            background: linear-gradient(to bottom, darkgreen, lightgreen);
+        }
+        #three{
+            background: linear-gradient(45deg, pink, skyblue, orange);
+        }
+        #four{
+            background: linear-gradient(to right,orange,yellow,green,pink,purple,blue,black);
+        }
+        #five{
+            background: radial-gradient(circle, yellow, green);
+        }
+        #six{
+            background: radial-gradient(ellipse, pink, blue);
+        }
+        #seven{
+            background: radial-gradient(farthest-corner at center, white, black);
+        }
+        #eight{
+            background: radial-gradient(closest-side at center, red, blue);
+        }
+        #nine{
+            background: conic-gradient(red, yellow, green, blue);
+        }
+        #ten{
+            background: conic-gradient(from 45deg, pink, cyan, orange, pink);
+        }
+        #eleven{
+            background: conic-gradient(red 0deg, 30deg, yellow 30deg, 60deg, green 60deg 360deg);
+        }
+        #twelve{
+            background: conic-gradient(at top left, white, black, red);
+        }
+        #container2{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item2{
+            height: 150px;
+            width: 250px;
+            border: 1px solid black;
+            margin-left: 10px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px black;
+            
+        }
+        #first{
+            background: repeating-linear-gradient(45deg, red, red 10px, yellow 10px, yellow 20px);
+        }
+        #second{
+            background: repeating-radial-gradient(circle, blue, blue 10px, white 10px, white 20px);
+        }
+        #third{
+            background: repeating-conic-gradient(red 0deg 30deg, yellow 30deg 60deg, green 60deg 90deg);
+        }
+
+ 
+
+    </style>
+
+
+</head>
+<body>
+    <h2>All CSS Gradient Examples</h2>
+    <div id="container"> 
+        <di class="item" id="one">linear left to right</di>
+        <di class="item" id="two">linear top to bottom</di>
+        <di class="item" id="three">linear diagonal</di>
+        <di class="item" id="four">linear multi color</di>
+        <di class="item" id="five">radial circle</di>
+        <di class="item" id="six">radial ellipse</di>
+        <di class="item" id="seven">radial farthest corner</di>
+        <di class="item" id="eight">radial closest side</di>
+        <di class="item" id="nine">Conic default</di>
+        <di class="item" id="ten">Conic angled</di>
+        <di class="item" id="eleven">Conic segments</di>
+        <di class="item" id="twelve">Conic at position</di>
+    </div>
+    <div id="container2">
+        <div class="item2" id="first"></div>
+        <div class="item2" id="second"></div>
+        <div class="item2" id="third"></div>
+
+    </div>
+</body>
+</html>

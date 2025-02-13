@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2616bc9d69.js" crossorigin="anonymous"></script>
+    <style>
+        #outer-most{
+            width: 98%;
+            height: 100%;
+            border: 3px solid black;
+            background: linear-gradient(to right, skyblue, pink);
+            margin: auto;
+            position: relative;
+        }
+        #inner-most{
+            height: 90%;
+            width: 75%;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 15px;
+            margin: 25px auto;
+            background-color: whitesmoke;
+            position: relative;
+        }
+        #navbar{
+            height: 50px;
+            width: 65%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-bt{
+            height: 50%;
+            width: 70px;
+            background: none;
+            font-size: small;
+            border: none;
+        }
+        #head{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #content{
+            height: 330px;
+            width: 85%;
+            margin-bottom: 15px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .items{
+            height: 320px;
+            width: 200px;
+            margin: 15px;
+            border-radius: 10px;          
+        }
+        .items:hover{
+            scale: 1.1;
+            transition-duration: 1s;
+        }
+        img{
+            height: 60%;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        h5{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 0px;
+            font-weight:200
+        }
+        h6{
+            display: inline-block;
+            margin-left: 25px;
+            margin-top: 0px;
+            font-weight:100
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="outer-most">
+        <div id="inner-most">
+            <div id="navbar">
+                 <button class="nav-bt">Home</button>
+                 <button class="nav-bt">About</button>
+                 <button class="nav-bt">Contact</button>
+                 <h2 id="h21"><i>Stablo</i></h2>
+                 <button class="nav-bt">Archive</button>
+                 <button class="nav-bt">Github</button>
+                 <button class="nav-bt">Dashboard</button>
+            </div>
+            <div id="head">
+                <h2>Archive</h2>
+            </div>
+            <div id="content">
+                <div class="items"><img src="img1.jpg" alt=""><a href="">Science</a><p><i>Technology is the backbone of the world..</i></p><i class="fa-solid fa-user"></i><h5>shashank</h5><h6>22 nov, 2020</h6></div>
+                <div class="items"><img src="img2.jpg" alt=""><a href="">Food</a><p><i>You must follow a healthy lifestyle..</i></p><i class="fa-solid fa-user"></i><h5>shashank</h5><h6>22 nov, 2020</h6></div>
+                <div class="items"><img src="img3.jpg" alt=""><a href="">Coding</a><p><i>If the code is running, do not touch it..</i></p><i class="fa-solid fa-user"></i><h5>shashank</h5><h6>22 nov, 2020</h6></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

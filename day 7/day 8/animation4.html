@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: black;
+    }
+    #mount{
+        position: absolute;
+    }
+
+    .sun{
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(yellow, orange);
+        box-shadow: 3px 3px 10px yellow;
+        border-radius: 50px;
+        margin: 20px auto;
+        animation-name: game;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes game {
+        0%{
+            transform: translateY(300px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+   
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div id="mount"><img src="https://clipart-library.com/8300/2368/Snowy_Mountain_Transparent_PNG_Clipart.png"  width="100%"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+div {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+/* Fixed position me div ko left, right, top, bottom diya jaa skta h,,, fixed me screen par fix ho jata h */
+/* Static position me div ko properties nhi de skte,,, static m div ya element uss web page par fix hoga naaki screen pe */
+/* Absolute position me div sabse upar margin se distance leta hai jaise ki top="200px" */
+/* Relative position me div apmi initial position se move krta h*/
+div:nth-of-type(1) {
+    background-color: red;
+    position: fixed;
+    top: 25px;
+
+}
+
+div:nth-of-type(2) {
+    background-color: green;
+    position: static;
+    /* no property can be applied */
+}
+
+div:nth-of-type(3) {
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+}
+
+div:nth-of-type(4) {
+    background-color: yellow;
+    position: relative;
+    left: 600px;
+} 
+
+#parent {
+    height: 300px;
+    width: 400px;
+    border: 5px solid black;
+    margin: auto;
+    align-items: center;
+}
